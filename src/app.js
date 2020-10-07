@@ -1,9 +1,2 @@
-"use strict";
-
-var app = document.getElementById("app");
-var p = React.createElement(
-  "p",
-  null,
-  "I am paragraph"
-);
-ReactDOM.render(p, app);
+const app = document.getElementById("app");
+console.log("I am running and working");

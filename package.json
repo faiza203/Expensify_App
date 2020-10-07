@@ -1,14 +1,26 @@
 {
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "1.5.2",
-    "babel-preset-react": "^6.24.1",
-    "live-server": "^1.2.1"
-  },
   "name": "expensify_application",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/faiza203/Expensify_App.git",
   "author": "Faiza Fiaz",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --watch",
+    "build-babel": "babel src/app.js --out-file=scripts/app.js --presets=env,react --watch"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "live-server": "^1.2.1",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "webpack": "^4.44.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
 }

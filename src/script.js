@@ -1,3 +1,4 @@
-const app = document.getElementById("app");
-const p = <p>I am paragraph</p>;
-ReactDOM.render(p , app)
+import "./app.js";
+import React from "react";
+import ReactDOM from "react-dom"
+console.log(React , ReactDOM);
