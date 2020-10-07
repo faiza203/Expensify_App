@@ -2,5 +2,9 @@ import "./app.js";
 import React from "react";
 import ReactDOM from "react-dom"
 console.log(React , ReactDOM);
-const para = <p>I am JSX from webpack</p>
-ReactDOM.render(para , app)
+class Paragraph extends React.Component {
+      render(){
+         return <p>I am paragraph</p>
+      }
+}
+ReactDOM.render(<Paragraph />  , document.getElementById("app"))
