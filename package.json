@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "^6.24.1",
     "live-server": "^1.2.1"
-  }
+  },
+  "name": "expensify_application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/faiza203/Expensify_App.git",
+  "author": "Faiza Fiaz",
+  "license": "MIT"
 }
