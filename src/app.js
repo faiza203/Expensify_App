@@ -1,2 +1,3 @@
-const app = document.getElementById("app");
+import "./../styles/style.scss"
+
 console.log("I am running and working");

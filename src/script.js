@@ -1,6 +1,6 @@
-import "./app.js";
 import React from "react";
 import ReactDOM from "react-dom"
+import  "./../styles/style.scss";
 console.log(React , ReactDOM);
 class Paragraph extends React.Component {
       render(){
