@@ -9,14 +9,13 @@ import noFoundPage from "./noFound";
 const AapRoutes  = () =>(
       <BrowserRouter>
             <Header />
-           
+            <Switch>
+            <Route path="/" component={expenseDashboardPage} exact={true} />
+            <Route path="/create" component={addExpensePage} />
+            <Route path="/help" component={helpPage} />
+            <Route path="/edit" component={editPage} />
+            <Route component={noFoundPage} />
+            </Switch>           
       </BrowserRouter>
 )
 export default AapRoutes;
-// <Switch>
-// <Route path="/" component={expenseDashboardPage} exact={true} />
-// <Route path="/create" component={addExpensePage} />
-// <Route path="/help" component={helpPage} />
-// <Route path="/edit" component={editPage} />
-// <Route component={noFoundPage} />
-// </Switch>
