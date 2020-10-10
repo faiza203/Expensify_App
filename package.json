@@ -6,6 +6,7 @@
   "author": "Faiza Fiaz",
   "license": "MIT",
   "scripts": {
+    "dev-server": "webpack-dev-server",
     "build": "webpack --watch",
     "build-babel": "babel src/app.js --out-file=scripts/app.js --presets=env,react --watch"
   },
@@ -17,13 +18,16 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^4.3.0",
+    "dev-server": "^0.1.0",
     "live-server": "^1.2.1",
-    "node-sass": "0.28.4",
-    "react": "15.6.1",
-    "react-dom": "15.6.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "sass-loader": "6.0.6",
     "style-loader": "0.18.2",
-    "webpack": "^4.44.2"
+    "webpack": "^4.44.2",
+    "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
     "webpack-cli": "^3.3.12"

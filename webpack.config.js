@@ -1,22 +1,24 @@
 const path = require("path");
 module.exports = {
-    entry : "./src/script.js",
-    output:{
-        path: path.join(__dirname , "scripts"),
-        filename : "app.js"
+    entry: "./src/script.js",
+    output: {
+        path: path.join(__dirname, "scripts"),
+        filename: "app.js"
     },
     module: {
         rules: [{
-            loader: "babel-loader" ,
-            test: /\.js$/ ,
-            exclude : /node_modules/,
-        },{
+            loader: "babel-loader",
+            test: /\.js$/,
+            exclude: /node_modules/,
+        }, {
             test: /\.scss$/,
-            use:[
+            use: [
                 "style-loader",
-                "css-loader"     ,
-            "sass-loader"       ]
+                "css-loader",
+                "sass-loader"]
         }
-    ]
+        ]
+    }, devServer: {
+        historyApiFallback: true,
     }
 }
