@@ -1,4 +1,7 @@
 $brand-color : red;
-p{
-    color: $brand-color;
+body{
+    background-color: $brand-color;
+}
+link{
+    cursor: pointer;
 }
