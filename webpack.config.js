@@ -1,6 +1,6 @@
 const path = require("path");
 module.exports = {
-    entry: "./src/redux.js",
+    entry: "./src/destructing.js",
     output: {
         path: path.join(__dirname, "scripts"),
         filename: "app.js"
