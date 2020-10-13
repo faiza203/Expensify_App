@@ -27,7 +27,12 @@ const store = createStore((state = { count: 0 }, action) => {
 store.subscribe(() => {
   console.log(store.getState());
 })
-store.dispatch({
+const increase = ({incrementBy = 5} = {}) => ({
+    type : "INCREMENT",
+    incrementBy
+});
+store.dispatch(increase());
+  store.dispatch({
   type: 'INCREMENT',
   incrementBy: 5
 });
