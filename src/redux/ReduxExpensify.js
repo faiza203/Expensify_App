@@ -98,7 +98,12 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
         return {
           ...state ,
           sortBy : "date"
-        }
+        };
+        case 'SORT_BY_AMOUNT':
+          return {
+            ...state ,
+            sortBy : "amount"
+          }
     default:
       return state;
   }
@@ -125,6 +130,7 @@ store.dispatch(editExpense(expenseTwo.expense.id, { amount: 500 }));
 
 store.dispatch(setTextFilter('rent'));
 store.dispatch(sortByDate());
+store.dispatch(sortByAmount());
 
 const demoState = {
   expenses: [{
