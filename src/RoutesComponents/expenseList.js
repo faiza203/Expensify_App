@@ -5,4 +5,9 @@ const ExpenseList = ()=>(
     <h1>Expense List</h1>
     </div>
 );
-export default ExpenseList;
+const connectExpenseList = connect((state) => {
+ return {
+     name: "Faiza"
+ },(ExpenseList)
+});
+export default connectExpenseList;
