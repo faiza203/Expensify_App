@@ -6,6 +6,7 @@
   "author": "Faiza Fiaz",
   "license": "MIT",
   "scripts": {
+    "test": "jest",
     "dev-server": "webpack-dev-server",
     "build": "webpack",
     "build-babel": "babel src/app.js --out-file=scripts/app.js --presets=env,react --watch"
