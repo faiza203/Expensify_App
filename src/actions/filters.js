@@ -1,4 +1,3 @@
-
 // SET_TEXT_FILTER
 export const setTextFilter = (text = '') => ({
   type: 'SET_TEXT_FILTER',
@@ -26,4 +25,3 @@ export const setEndDate = (endDate) => ({
   type: 'SET_END_DATE',
   endDate
 });
-

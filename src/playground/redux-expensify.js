@@ -1,6 +1,5 @@
 import { createStore, combineReducers } from 'redux';
-import { v4 as uuid } from 'uuid';
-import "./../../styles/style.scss";
+import uuid from 'uuid';
 
 // ADD_EXPENSE
 const addExpense = (
